@@ -1,11 +1,9 @@
-import FunctionalComp from './functionalComp';
-import PureComp from './secondComp';
-import ComponentComp from './componentComp';
-import CreateElementComp from './createElementComp';
+import ErrorBoundary from './ErrorBoundary';
+import Header from './Containers/Header/Header';
+import MovieList from './Containers/MovieList/MovieList';
 
 export {
-  FunctionalComp,
-  PureComp,
-  ComponentComp,
-  CreateElementComp,
+  ErrorBoundary,
+  Header,
+  MovieList,
 };

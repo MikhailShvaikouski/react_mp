@@ -1,22 +1,19 @@
 import React from 'react';
 
 import {
-  FunctionalComp,
-  PureComp,
-  ComponentComp,
-  CreateElementComp,
+  ErrorBoundary,
+  Header,
+  MovieList,
 } from './modules';
 
 const App = () => (
-  <div>
+  <React.StrictMode>
+    <ErrorBoundary>
+      <Header />
+      <MovieList />
+    </ErrorBoundary>
+  </React.StrictMode>
 
-    <span>Hello world!</span>
-
-    <FunctionalComp />
-    <PureComp />
-    <ComponentComp />
-    <CreateElementComp />
-  </div>
 );
 
 export default App;

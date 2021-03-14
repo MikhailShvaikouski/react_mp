@@ -40,6 +40,14 @@ module.exports = ({ prod }) => ({
         ],
         exclude: /\.module\.css$/,
       },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
+      },
     ],
   },
   resolve: {

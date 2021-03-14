@@ -4,6 +4,7 @@ import {
   ErrorBoundary,
   Header,
   MovieList,
+  Footer,
 } from './modules';
 
 const App = () => (
@@ -11,6 +12,7 @@ const App = () => (
     <ErrorBoundary>
       <Header />
       <MovieList />
+      <Footer />
     </ErrorBoundary>
   </React.StrictMode>
 

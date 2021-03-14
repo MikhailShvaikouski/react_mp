@@ -7,12 +7,15 @@ import Button from '../Button/Button';
 const searchClick = () => alert('SEARCH');
 
 const Search = () => (
-  <span className={styles.search}>
-    <input placeholder="What do you want to watch?" />
-    <Button
-      tittle="SEARCH"
-      onClick={searchClick}
-    />
+  <span className={styles.searchWrapper}>
+    <p className={styles.heading}>FIND YOUR MOVIE</p>
+    <span className={styles.search}>
+      <input placeholder="What do you want to watch?" />
+      <Button
+        tittle="SEARCH"
+        onClick={searchClick}
+      />
+    </span>
   </span>
 );
 

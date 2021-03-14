@@ -11,19 +11,20 @@ const addMovieClick = () => alert('+ ADD MOVIE');
 
 const Header = () => (
   <div className={styles.header}>
-    <span className={styles.topHeader}>
-      <p className={styles.appName}>
-        <strong>netflix</strong>
-        roulette
-      </p>
-      <Button
-        className={styles.btn}
-        tittle="+ ADD MOVIE"
-        onClick={addMovieClick}
-      />
-    </span>
-    <h1 className={styles.heading}>FIND YOUR MOVIE</h1>
-    <Search />
+    <div className={styles.headerContent}>
+      <span className={styles.topHeader}>
+        <p className={styles.appName}>
+          <strong>netflix</strong>
+          roulette
+        </p>
+        <Button
+          className={styles.btn}
+          tittle="+ ADD MOVIE"
+          onClick={addMovieClick}
+        />
+      </span>
+      <Search />
+    </div>
   </div>
 );
 
